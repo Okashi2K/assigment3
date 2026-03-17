@@ -6,7 +6,7 @@ spec:
   type: LoadBalancer
   selector:
     app: mijn-website
-    version: blue
+    version: green
   ports:
   - protocol: TCP
     port: 80
