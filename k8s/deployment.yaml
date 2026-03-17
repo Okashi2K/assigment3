@@ -16,7 +16,6 @@ spec:
     spec:
       containers:
       - name: webserver
-        # De exacte image link vullen we straks automatisch in via de GitHub Actions pipeline!
         image: IMAGE_PLACEHOLDER 
         ports:
         - containerPort: 80
