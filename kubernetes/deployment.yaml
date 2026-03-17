@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: website-blue
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mijn-website
+      version: blue
+  template:
+    metadata:
+      labels:
+        app: mijn-website
+        version: blue
+    spec:
+      containers:
+      - name: webserver
+        # De exacte image link vullen we straks automatisch in via de GitHub Actions pipeline!
+        image: IMAGE_PLACEHOLDER 
+        ports:
+        - containerPort: 80
